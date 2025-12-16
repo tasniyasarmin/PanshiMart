@@ -1,0 +1,11 @@
+.header {
+  /* The image is now here. Relative positioning keeps the absolute overlay inside. */
+  @apply w-full h-[300px] relative -z-10;
+}
+.header-cover {
+  /* This is now just the overlay color sitting on top of the parent's image */
+  @apply absolute inset-0 w-full h-full bg-black/40;
+}
+.header-heading {
+  @apply text-white text-2xl capitalize font-medium;
+}
